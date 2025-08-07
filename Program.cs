@@ -90,9 +90,26 @@
             //Console.WriteLine($"P02 : {P02}"); 
             #endregion
 
+            //Linear Search 
 
+            // 4 7 8 9 10 1 2 3 5 12 -1 -13 11
 
+            //Index 
 
+            //int[] Numbers = { 8, 7, 6, 1, 2, 3, 4, 5, 6, 12, -1, 13, 9 };
+
+            //int Index = Helper.LinearSearch(Numbers, 4);
+
+            //Console.WriteLine($"Index : {Index}");
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 31, Salary=12000 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 34, Salary=11000 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Age = 32, Salary=13000 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Age = 39, Salary=19000 };
+
+            //Employee[] employee = { E01, E02, E03, E04, };
+
+            //Helper.LinearSearch(employee, E01);
         }
     }
 }
