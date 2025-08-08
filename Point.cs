@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ADV01
 {
-    internal class Point
+    internal class Point : ICloneable<Point>
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -21,6 +21,15 @@ namespace ADV01
             return $"{X},{Y}";
         }
 
+        public int CompareTo(Point?other)
+        {
+            if(other is not null)
+            {
+                if (X == other.X) return Y.CompareTo(other.Y);
+                return X.CompareTo(other.X);
+            }
+            return 1;
+        }
 
         //public int CompareTo (object? obj)
         //{
@@ -57,19 +66,20 @@ namespace ADV01
         //    return 1;
         //}
 
-        public int CompareTo(object? obj)
-        {
-            //2.as casting operator 
+        //public int CompareTo(object? obj)
+        //{
+        //    //2.as casting operator 
 
-            Point P = obj as Point;
-            if(P is not null)
-            {
-                if (X == P.X) return Y.CompareTo(P.Y);
-                return X.CompareTo(P.X);
-            }
+        //    Point P = obj as Point;
+        //    if(P is not null)
+        //    {
+        //        if (X == P.X) return Y.CompareTo(P.Y);
+        //        return X.CompareTo(P.X);
+        //    }
 
-            return 1;
-        }
+        //    return 1;
+        //}
+
 
     }
 }

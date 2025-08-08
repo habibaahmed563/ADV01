@@ -8,7 +8,7 @@ namespace ADV01
 {
     internal class Helper/*<T>*/
     {
-        public static void Bubblesort<T>(T[] Arr)where T : IComparable
+        public static void Bubblesort<T>(T[] Arr)where T : IComparable<T>
         {
             if (Arr?.Length > 0)
             {

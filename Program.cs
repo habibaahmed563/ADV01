@@ -171,6 +171,7 @@
             //0 : Caller > parameter 
             #endregion
 
+            #region is and as casting operator
 
             //Point[] Points =
             //{
@@ -195,6 +196,35 @@
                 Console.WriteLine("P01 is greater than P02");
             else
                 Console.WriteLine("P01 is not greater than P02");
+            #endregion
+
+            #region non Generic IComparable vs Generic IComparable
+
+            //Point[] Points =
+            //{
+            //    new Point(6,6),
+            //    new Point(2,2),
+            //    new Point(4,4),
+            //    new Point(3,3),
+            //    new Point(1,1),
+            //    new Point(5,5),
+            //};
+
+            //Helper.PrintArray(Points);
+
+            //Helper.Bubblesort(Points);
+
+            //Helper.PrintArray(Points);
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 31, Salary = 12000 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 34, Salary = 11000 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Age = 32, Salary = 13000 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Age = 39, Salary = 19000 };
+
+            //Employee[] employee = { E01, E02, E03, E04, }; 
+            #endregion
+
+
 
 
         }

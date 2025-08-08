@@ -32,5 +32,18 @@ namespace ADV01
         {
             return $"Id : {Id},Name : {Name},Age : {Age},Salary : {Salary}";
         }
+
+        //public int CompareTo(Employee? other)
+        //{
+        //    if (other is null) return 1;
+        //    return Age.CompareTo(other.Age);
+        //}
+
+
+        public int CompareTo(Employee? other)
+        {
+            if (other is null) return 1;
+            return Age.CompareTo(other.Age);
+        }
     }
 }
