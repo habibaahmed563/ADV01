@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ADV01
 {
-    internal struct Point
+    internal class Point
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -19,6 +19,56 @@ namespace ADV01
         public override string ToString()
         {
             return $"{X},{Y}";
+        }
+
+
+        //public int CompareTo (object? obj)
+        //{
+        //    Point P = (Point)obj;
+        //    if (X == P.X) return Y.CompareTo(P.Y);
+        //    return X.CompareTo(P.X);
+        //}
+
+
+        //public int CompareTo(object? obj)
+        //{
+        //    if (obj is not null)
+        //    {
+
+        //        Point P = (Point)obj;
+        //        if (X == P.X) return Y.CompareTo(P.Y);
+        //        return X.CompareTo(P.X);
+        //    }
+        //    return 1;
+        //}
+
+        //public int CompareTo(object? obj)
+        //{
+        //    //1. is conditional operator
+        //    if (obj is not null)
+        //    {
+        //        if (obj is Point P)
+        //        {
+        //            //Point P = (Point)obj;
+        //            if (X == P.X) return Y.CompareTo(P.Y);
+        //            return X.CompareTo(P.X);
+        //        }
+        //    }
+        //    return 1;
+        //}
+
+        public int CompareTo(object? obj)
+        {
+            //2.as casting operator 
+
+            Point P = obj as Point;
+            if(P is not null)
+            {
+                if (X == P.X) return Y.CompareTo(P.Y);
+                return X.CompareTo(P.X);
+            }
+
+            return 1;
         }
 
     }

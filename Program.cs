@@ -139,6 +139,7 @@
             //  
             #endregion   Console.WriteLine("E01 != E02!");
 
+            #region Generic Ex03 : Buble Sort
             // 2,3,9,8,7,6,5,4,1,12,-1,0
 
             //sorting : Bubble sort 
@@ -151,15 +152,15 @@
             //Helper.Bubblesort(numbers);
             //Helper.PrintArray(numbers);
 
-            Point[] Points =
-            {
-                new Point(6,6),
-                new Point(2,2),
-                new Point(4,4),
-                new Point(3,3),
-                new Point(1,1),
-                new Point(5,5),
-            };
+            //Point[] Points =
+            //{
+            //    new Point(6,6),
+            //    new Point(2,2),
+            //    new Point(4,4),
+            //    new Point(3,3),
+            //    new Point(1,1),
+            //    new Point(5,5),
+            //};
 
             //Helper.Bubblesort(Points);
 
@@ -167,7 +168,34 @@
             //int 
             //+ : Caller > parameter
             //+ : Caller > parameter
-            //0 : Caller > parameter
+            //0 : Caller > parameter 
+            #endregion
+
+
+            //Point[] Points =
+            //{
+            //    new Point(6,6),
+            //    new Point(2,2),
+            //    new Point(4,4),
+            //    new Point(3,3),
+            //    new Point(1,1),
+            //    new Point(5,5),
+            //};
+
+            //Helper.PrintArray(Points);
+
+            //Helper.Bubblesort(Points);
+
+            //Helper.PrintArray(Points);
+
+            Point P01 = new Point(1, 1);
+            Point P02 = new Point(2, 2);
+
+            if (P01.CompareTo(P02) > 0)
+                Console.WriteLine("P01 is greater than P02");
+            else
+                Console.WriteLine("P01 is not greater than P02");
+
 
         }
     }
