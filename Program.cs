@@ -139,6 +139,35 @@
             //  
             #endregion   Console.WriteLine("E01 != E02!");
 
+            // 2,3,9,8,7,6,5,4,1,12,-1,0
+
+            //sorting : Bubble sort 
+
+            //int[] numbers = {2,3,9,8,7,6,5,4,1,12,-1,0}
+
+            //Helper.PrintArray(numbers);
+            //Console.WriteLine();
+
+            //Helper.Bubblesort(numbers);
+            //Helper.PrintArray(numbers);
+
+            Point[] Points =
+            {
+                new Point(6,6),
+                new Point(2,2),
+                new Point(4,4),
+                new Point(3,3),
+                new Point(1,1),
+                new Point(5,5),
+            };
+
+            //Helper.Bubblesort(Points);
+
+            //Icompareable : CompareTo
+            //int 
+            //+ : Caller > parameter
+            //+ : Caller > parameter
+            //0 : Caller > parameter
 
         }
     }
