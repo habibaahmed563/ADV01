@@ -82,4 +82,8 @@ namespace ADV01
 
 
     }
+
+    internal interface ICloneable<T>
+    {
+    }
 }

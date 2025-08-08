@@ -45,5 +45,13 @@ namespace ADV01
             if (other is null) return 1;
             return Age.CompareTo(other.Age);
         }
+
+        public bool Equals(Employee? other)
+        {
+            if (other is null) return false;
+            return this == other;
+        }
+
+
     }
 }
