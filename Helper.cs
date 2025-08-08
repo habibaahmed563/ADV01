@@ -23,6 +23,19 @@ namespace ADV01
             }
         }
 
+        public static int LinearSearch<T>(T[] Arr, T value,IEqualityComparer<T> equalityComparer)
+        {
+            if (Arr?.Length > 0)
+            {
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    if (equalityComparer.Equals(value)) return i;
+                }
+            }
+
+            return -1;
+        }
+
         #region Non Generic Bubble
         //public static void Bubblesort(int[] Arr)
         //{

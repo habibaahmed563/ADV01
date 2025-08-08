@@ -189,13 +189,13 @@
 
             //Helper.PrintArray(Points);
 
-            Point P01 = new Point(1, 1);
-            Point P02 = new Point(2, 2);
+            //Point P01 = new Point(1, 1);
+            //Point P02 = new Point(2, 2);
 
-            if (P01.CompareTo(P02) > 0)
-                Console.WriteLine("P01 is greater than P02");
-            else
-                Console.WriteLine("P01 is not greater than P02");
+            //if (P01.CompareTo(P02) > 0)
+            //    Console.WriteLine("P01 is greater than P02");
+            //else
+            //    Console.WriteLine("P01 is not greater than P02");
             #endregion
 
             #region non Generic IComparable vs Generic IComparable
@@ -224,24 +224,43 @@
             //Employee[] employee = { E01, E02, E03, E04, }; 
             #endregion
 
+            #region Built-in intergace Generic Iequatable
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 31, Salary = 12000 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 34, Salary = 11000 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Age = 32, Salary = 13000 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Age = 39, Salary = 19000 };
 
-            Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 31, Salary = 12000 };
-            Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 34, Salary = 11000 };
-            Employee E03 = new Employee() { Id = 3, Name = "Omar", Age = 32, Salary = 13000 };
-            Employee E04 = new Employee() { Id = 4, Name = "Mona", Age = 39, Salary = 19000 };
+            ////Employee[] employee = { E01, E02, E03, E04, };
+
+            ////int Index = Helper.LinearSearch(employee, E03);
+
+            ////Console.WriteLine($"Index : {Index}");
+
+            //if (E01.Equals(E02))
+            //    Console.WriteLine("E01==E02");
+            //else
+            //    Console.WriteLine("E01!=E02");
+
+            //Built-in Interface IEquality 
+            #endregion
+
+            #region Built-in Interface Generic IEqualityComparer
+            //Built-in interface Generic IEqualityComparer
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 31, Salary = 12000 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 34, Salary = 11000 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Age = 32, Salary = 13000 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Age = 39, Salary = 19000 };
 
             //Employee[] employee = { E01, E02, E03, E04, };
 
             //int Index = Helper.LinearSearch(employee, E03);
 
-            //Console.WriteLine($"Index : {Index}");
+            //Console.WriteLine($"Index : {Index}"); 
+            #endregion
 
-            if (E01.Equals(E02))
-                Console.WriteLine("E01==E02");
-            else
-                Console.WriteLine("E01!=E02");
+            
 
-            //Built-in Interface IEquality
 
         }
     }
