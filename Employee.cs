@@ -21,6 +21,14 @@ namespace ADV01
         }
     }
 
+    class EmployeeComparerSalary : IComparer<Employee>
+    {
+        public int Compare(Employee? x, Employee? y)
+        {
+            return x.Salary.CompareTo(y.Salary);
+        }
+    }
+
     internal class Employee
     {
         public int Id { get; set; }

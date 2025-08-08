@@ -36,6 +36,21 @@ namespace ADV01
             return -1;
         }
 
+        public static void Bubblesort<T>(T[] Arr,IComparer<T>comparer) where T : IComparable<T>
+        {
+            if (Arr?.Length > 0)
+            {
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    for (int j = 0; j < Arr.Length - i - 1; j++)
+                    {
+                        if (Arr[j].CompareTo(Arr[j + 1]) > 0)
+                            Swap(ref Arr[j], ref Arr[j + 1]);
+                    }
+                }
+            }
+        }
+
         #region Non Generic Bubble
         //public static void Bubblesort(int[] Arr)
         //{

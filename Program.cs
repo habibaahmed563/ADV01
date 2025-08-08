@@ -259,7 +259,25 @@
             //Console.WriteLine($"Index : {Index}"); 
             #endregion
 
-            
+            #region IComparer with Bubble sort
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 31, Salary = 12000 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 34, Salary = 11000 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Age = 32, Salary = 13000 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Age = 39, Salary = 19000 };
+
+            //Employee[] employee = { E01, E02, E03, E04, };
+
+            //Helper.PrintArray(employees);
+
+            //Helper.BubleSort(employees,new EmployeeComparerSalary()); //Sorting Based on salary
+            //Helper.BubleSort(employees,new EmployeeComparerSalary()); //Sorting Based on Named Length
+
+            //Console.WriteLine();
+
+            //Helper.PrintArray(employee);
+
+            //Array.sort() 
+            #endregion
 
 
         }
