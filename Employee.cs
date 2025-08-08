@@ -13,6 +13,21 @@ namespace ADV01
         public int Age { get; set; }
         public double Salary { get; set; }
 
+        //Operator Overloading ==
+        public static bool operator ==(Employee left , Employee right)
+        {
+            return left.Id == right.Id && left.Name == right.Name && left.Age == right.Age && left.Salary == right.Salary;
+        }
+        public static bool operator !=(Employee left, Employee right)
+        {
+            return left.Id == right.Id || left.Name == right.Name || left.Age == right.Age || left.Salary == right.Salary;
+        }
+        public override bool Equals(object? obj)
+        {
+            Employee E = (Employee)obj;
+            return this == obj;
+        }
+
         public override string ToString()
         {
             return $"Id : {Id},Name : {Name},Age : {Age},Salary : {Salary}";

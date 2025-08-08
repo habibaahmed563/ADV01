@@ -90,6 +90,7 @@
             //Console.WriteLine($"P02 : {P02}"); 
             #endregion
 
+            #region Generic EX02 : Linear Search
             //Linear Search 
 
             // 4 7 8 9 10 1 2 3 5 12 -1 -13 11
@@ -109,7 +110,36 @@
 
             //Employee[] employee = { E01, E02, E03, E04, };
 
-            //Helper.LinearSearch(employee, E01);
+            //Helper.LinearSearch(employee, E01); 
+            #endregion
+
+            #region Equality in class or struct
+
+            //Equality in class or struct 
+            //Equals
+            //'Class' Has Equals Functions which inherited from object class --> Compare Reference
+            //'Struct' Has Equals Functions which inherited from object class --> Compare Data
+            //Note : Struct Don't have Implementation For the ==Operation
+
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 31, Salary = 12000 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 34, Salary = 11000 };
+
+            //Console.WriteLine($"E01 : {E01.GetHashCode()}");
+            //Console.WriteLine($"E02 : {E02.GetHashCode()}");
+
+            //if (E01.Equals(E02))
+            //    Console.WriteLine("E01 == E02!");
+            //else
+            //    Console.WriteLine("E01 != E02!");
+
+            //if (E01.Equals(E02))
+            //    Console.WriteLine("E01 == E02!");
+            //else
+            //  
+            #endregion   Console.WriteLine("E01 != E02!");
+
+
         }
     }
 }
