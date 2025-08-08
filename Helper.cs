@@ -6,8 +6,24 @@ using System.Threading.Tasks;
 
 namespace ADV01
 {
-    internal class Helper/*<T>*/
+    internal class Helper<T01> where T01:class
     {
+        //Generic Constraints : 
+        //1. Primary constraints [0:1]
+        //1.1.class
+        //1.2.struct
+        //1.3.special type point
+        //1.4.enum
+        //1.5.notnull
+
+
+        //2. secondary constraints[0 : M]
+        //T Implement interace 
+
+        //3. constructor constraints
+
+
+        // T :? Must Be Type Which Implement The ICompareable Interface 
         public static void Bubblesort<T>(T[] Arr)where T : IComparable<T>
         {
             if (Arr?.Length > 0)
