@@ -1,7 +1,27 @@
-﻿namespace ADV01
+﻿using System.Collections;
+
+namespace ADV01
 {
     internal class Program
     {
+
+        static void ReverseArrayList(ArrayList list)
+        {
+            int start = 0;
+            int end = list.Count - 1;
+
+            while(start<end)
+            {
+                Object temp = list[start];
+                list[start] = list[end];
+                list[end] = temp;
+
+                start++;
+                end--;
+            }
+           
+        }
+
         static void Main(string[] args)
         {
 
@@ -19,7 +39,24 @@
             Console.WriteLine(r3);
 
 
-            
+            //Q2
+
+            ArrayList list = new ArrayList() { 2, 4, 6, 8 };
+
+            Console.WriteLine("before reverse");
+            foreach (int i in list)
+            {
+                Console.Write($"{i} ");
+            }
+            Console.WriteLine();
+
+            ReverseArrayList(list);
+
+            Console.WriteLine("after reverse");
+            foreach (int i in list)
+            {
+                Console.Write($"{i} ");
+            }
 
         }
     }
