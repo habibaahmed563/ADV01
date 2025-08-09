@@ -22,6 +22,17 @@ namespace ADV01
            
         }
 
+        static List<int> EvenNumbers(List<int> numbers)
+        {
+            List<int> even = new List<int>();
+            foreach(int num in numbers)
+            {
+                if (num % 2 == 0)
+                    even.Add(num);
+            }
+            return even;
+        }
+
         static void Main(string[] args)
         {
 
@@ -37,6 +48,8 @@ namespace ADV01
 
             var r3 = new Range<int>(12, 4);
             Console.WriteLine(r3);
+
+            Console.WriteLine("==================================");
 
 
             //Q2
@@ -57,6 +70,29 @@ namespace ADV01
             {
                 Console.Write($"{i} ");
             }
+
+            Console.WriteLine();
+            Console.WriteLine("==================================");
+
+            //Q3
+
+            List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6 };
+            List<int> evennumbers = EvenNumbers(numbers);
+
+            Console.Write("even numbers is :");
+            foreach(int i in evennumbers)
+            {
+                Console.Write($"{i} ");
+            }
+
+
+            Console.WriteLine();
+            Console.WriteLine("==================================");
+
+
+            //Q4
+
+
 
         }
     }
