@@ -92,6 +92,22 @@ namespace ADV01
 
             //Q4
 
+            try
+            {
+                FixedSizeList<int> List = new FixedSizeList<int>(3);
+
+                list.Add(10);
+                list.Add(20);
+                list.Add(30);
+
+                Console.WriteLine(List.Get(0));
+                Console.WriteLine(List.Get(1));
+                Console.WriteLine(List.Get(2));
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Error : {ex.Message}");
+            }
 
 
         }
